@@ -1,14 +1,14 @@
 # KiCad CvPcb user manual German translation
 #
-# Copyright (C) 2016 The KiCad documentation Team
+# Copyright (C) The KiCad Documentation Team
 # This file is distributed under the same license as the KiCad documentation package.
 # André S.<ansc.de@gmail.com>, 2015-12.
 # Carsten Schoenert <c.schoenert@t-online.de>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: KiCad CvPcb Manual\n"
-"POT-Creation-Date: 2016-09-27 20:49+0200\n"
-"PO-Revision-Date: 2016-10-01 09:57+0200\n"
+"POT-Creation-Date: 2018-10-22 08:29+0200\n"
+"PO-Revision-Date: 2018-10-22 08:35+0200\n"
 "Last-Translator: Carsten Schoenert <c.schoenert@t-online.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -38,18 +38,12 @@ msgstr "*Copyright*\n"
 #. type: Plain text
 #: cvpcb.adoc:18
 msgid ""
-"This document is Copyright (C) 2010-2015 by it's contributors as listed "
+"This document is Copyright (C) 2010-2018 by it's contributors as listed "
 "below. You may distribute it and/or modify it under the terms of either the "
 "GNU General Public License (https://www.gnu.org/licenses/gpl.html), version "
 "3 or later, or the Creative Commons Attribution License (https://"
 "creativecommons.org/licenses/by/3.0/), version 3.0 or later."
-msgstr ""
-"Dieses Dokument ist geschützt (C) 2010-2015 durch deren Beitragende welche "
-"nachfolgend aufgeführt sind. Sie können es nach den Bedingungen der GNU "
-"General Public License (https://www.gnu.org/licenses/gpl.html), Version 3 "
-"oder später, oder der Creative Commons Attribution License (https://"
-"creativecommons.org/licenses/by/3.0/), Version 3.0 oder später verteilen "
-"oder verändern ."
+msgstr "Dieses Dokument ist geschützt (C) 2010-2018 durch deren Beitragende welche nachfolgend aufgeführt sind. Sie können es nach den Bedingungen der GNU General Public License (https://www.gnu.org/licenses/gpl.html), Version 3 oder später, oder der Creative Commons Attribution License (https://creativecommons.org/licenses/by/3.0/), Version 3.0 oder später verteilen oder verändern ."
 
 #. type: Plain text
 #: cvpcb.adoc:20
@@ -297,8 +291,8 @@ msgstr "*CvPcb wird nur aus dem Schaltplan Eingabeprogramm Eeschema aufgerufen*,
 
 #. type: Plain text
 #: cvpcb.adoc:112
-msgid "image:images/icons/run-cvpcb.png[Calling CvPcb]"
-msgstr "image:images/icons/run-cvpcb.png[CvPcb starten]"
+msgid "image:images/icons/cvpcb.png[Calling CvPcb]"
+msgstr "image:images/icons/cvpcb.png[CvPcb starten]"
 
 #. type: Plain text
 #: cvpcb.adoc:115
@@ -441,11 +435,11 @@ msgstr ""
 #: cvpcb.adoc:161
 #, no-wrap
 msgid ""
-"|image:images/icons/auto_association.png[]\n"
+"|image:images/icons/auto_associe.png[]\n"
 "|Automatically associate footprints with components starting using an\n"
 "equivalence file.\n"
 msgstr ""
-"|image:images/icons/auto_association.png[]\n"
+"|image:images/icons/auto_associe.png[]\n"
 "|Weise Footprints automatisch Bauteilen zu, unter Benutzung einer Äquivalenzdatei.\n"
 
 #. type: delimited block |
@@ -473,11 +467,11 @@ msgstr ""
 #: cvpcb.adoc:172
 #, no-wrap
 msgid ""
-"|image:images/icons/filter_component.png[]\n"
+"|image:images/icons/module_filtered_list.png[]\n"
 "|Enable or disable the filtering to limit the list of footprints to the\n"
 "footprint filters of the selected component.\n"
 msgstr ""
-"|image:images/icons/filter_component.png[]\n"
+"|image:images/icons/module_filtered_list.png[]\n"
 "|Ein- oder Ausschalten der Filterung, welche die Liste der Footprints auf die\n"
 "für das gewählte Bauteil gefilterten Footprints begrenzt.\n"
 
@@ -485,11 +479,11 @@ msgstr ""
 #: cvpcb.adoc:176
 #, no-wrap
 msgid ""
-"|image:images/icons/filter_pincount.png[]\n"
+"|image:images/icons/module_pin_filtered_list.png[]\n"
 "|Enable or disable the filtering to limit the list of footprints using\n"
 "the pin count of the selected component.\n"
 msgstr ""
-"|image:images/icons/filter_pincount.png[]\n"
+"|image:images/icons/module_pin_filtered_list.png[]\n"
 "|Ein- oder Ausschalten der Filterung, um die Liste auf die Pinanzahl\n"
 "des gewählten Bauteils zu begrenzen.\n"
 
@@ -497,11 +491,11 @@ msgstr ""
 #: cvpcb.adoc:180
 #, no-wrap
 msgid ""
-"|image:images/icons/filter_library.png[]\n"
+"|image:images/icons/module_library_list.png[]\n"
 "|Enable or disable filtering to limit the list of footprints using the\n"
 "selected library.\n"
 msgstr ""
-"|image:images/icons/filter_library.png[]\n"
+"|image:images/icons/module_library_list.png[]\n"
 "|Ein- oder Ausschalten der Filterung, um die Liste der Footprints auf die gewählte Bibliothek zu begrenzen.\n"
 
 #. type: Title ===
@@ -877,10 +871,10 @@ msgstr ""
 #: cvpcb.adoc:327
 #, no-wrap
 msgid ""
-"|image:images/icons/open_3d_model_view.png[]\n"
+"|image:images/icons/shape_3d.png[]\n"
 "|Open 3D model viewer\n"
 msgstr ""
-"|image:images/icons/open_3d_model_view.png[]\n"
+"|image:images/icons/shape_3d.png[]\n"
 "|Öffne Anzeige 3D-Modell\n"
 
 #. type: Title ====
@@ -893,20 +887,20 @@ msgstr "Senkrechte Werkzeugleiste"
 #: cvpcb.adoc:335
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_grid.png[]\n"
+"|image:images/icons/grid.png[]\n"
 "|Show or hide the grid\n"
 msgstr ""
-"|image:images/icons/toggle_grid.png[]\n"
+"|image:images/icons/grid.png[]\n"
 "|Raster anzeigen oder verbergen\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:338
 #, no-wrap
 msgid ""
-"|image:images/icons/coordination_system.png[]\n"
+"|image:images/icons/polar_coord.png[]\n"
 "|Show coordinates in polar or rectangular notation\n"
 msgstr ""
-"|image:images/icons/coordination_system.png[]\n"
+"|image:images/icons/polar_coord.png[]\n"
 "|Koordinaten in Polar- oder Rechteck-Notation anzeigen\n"
 
 #. type: delimited block |
@@ -933,40 +927,40 @@ msgstr ""
 #: cvpcb.adoc:347
 #, no-wrap
 msgid ""
-"|image:images/icons/pointer_style.png[]\n"
+"|image:images/icons/cursor_shape.png[]\n"
 "|Toggle pointer style\n"
 msgstr ""
-"|image:images/icons/pointer_style.png[]\n"
+"|image:images/icons/cursor_shape.png[]\n"
 "|Zeiger-Stil umschalten\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:350
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_pads_sketch.png[]\n"
+"|image:images/icons/pad_sketch.png[]\n"
 "|Toggle between drawing pads in sketch or normal mode\n"
 msgstr ""
-"|image:images/icons/toggle_pads_sketch.png[]\n"
+"|image:images/icons/pad_sketch.png[]\n"
 "|Umschalten zwischen Umriss- oder Normaldarstellung für Lötflächen.\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:353
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_text_sketch.png[]\n"
+"|image:images/icons/text_sketch.png[]\n"
 "|Toggle between drawing text in sketch or normal mode\n"
 msgstr ""
-"|image:images/icons/toggle_text_sketch.png[]\n"
+"|image:images/icons/text_sketch.png[]\n"
 "|Umschalten zwischen Umriss- oder Normalmodus für Text\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:356
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_edge_sketch.png[]\n"
+"|image:images/icons/show_mod_edge.png[]\n"
 "|Toggle between drawing edges in sketch or normal mode\n"
 msgstr ""
-"|image:images/icons/toggle_edge_sketch.png[]\n"
+"|image:images/icons/show_mod_edge.png[]\n"
 "|Umschalten zwischen Umriss- und Normalmodus für Bauteilränder\n"
 
 #. type: Title ===
@@ -1014,10 +1008,10 @@ msgstr ""
 #: cvpcb.adoc:380
 #, no-wrap
 msgid ""
-"|image:images/icons/copy_to_clipboard.png[]\n"
+"|image:images/icons/copy.png[]\n"
 "|Copy 3D image to clipboard\n"
 msgstr ""
-"|image:images/icons/copy_to_clipboard.png[]\n"
+"|image:images/icons/copy.png[]\n"
 "|3D-Bild in Zwischenablage kopieren\n"
 
 #. type: delimited block |
@@ -1044,60 +1038,60 @@ msgstr ""
 #: cvpcb.adoc:398
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_back_x.png[]\n"
+"|image:images/icons/rotate_neg_x.png[]\n"
 "|Rotate backward along the X axis\n"
 msgstr ""
-"|image:images/icons/rotate_back_x.png[]\n"
+"|image:images/icons/rotate_neg_x.png[]\n"
 "|Rückwärts entlang der X-Achse rotieren\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:401
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_forw_x.png[]\n"
+"|image:images/icons/rotate_pos_x.png[]\n"
 "|Rotate forward along the X axis\n"
 msgstr ""
-"|image:images/icons/rotate_forw_x.png[]\n"
+"|image:images/icons/rotate_pos_x.png[]\n"
 "|Vorwärts entlang der X-Achse rotieren\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:404
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_back_y.png[]\n"
+"|image:images/icons/rotate_neg_y.png[]\n"
 "|Rotate backward along the Y axis\n"
 msgstr ""
-"|image:images/icons/rotate_back_y.png[]\n"
+"|image:images/icons/rotate_neg_y.png[]\n"
 "|Rückwärts entlang der Y-Achse rotieren\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:407
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_forw_y.png[]\n"
+"|image:images/icons/rotate_pos_y.png[]\n"
 "|Rotate forward along the Y axis\n"
 msgstr ""
-"|image:images/icons/rotate_forw_y.png[]\n"
+"|image:images/icons/rotate_pos_y.png[]\n"
 "|Vorwärts entlang der Y-Achse rotieren\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:410
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_back_z.png[]\n"
+"|image:images/icons/rotate_neg_z.png[]\n"
 "|Rotate backward along the Z axis\n"
 msgstr ""
-"|image:images/icons/rotate_back_z.png[]\n"
+"|image:images/icons/rotate_neg_z.png[]\n"
 "|Rückwärts entlang der Z-Achse rotieren\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:413
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_forw_z.png[]\n"
+"|image:images/icons/rotate_pos_z.png[]\n"
 "|Rotate forward along the Z axis\n"
 msgstr ""
-"|image:images/icons/rotate_forw_z.png[]\n"
+"|image:images/icons/rotate_pos_z.png[]\n"
 "|Vorwärts entlang der Z-Achse rotieren\n"
 
 #. type: delimited block |
@@ -1144,10 +1138,10 @@ msgstr ""
 #: cvpcb.adoc:428
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_ortho.png[]\n"
+"|image:images/icons/ortho.png[]\n"
 "|Toggle orthographic projection mode on and off\n"
 msgstr ""
-"|image:images/icons/toggle_ortho.png[]\n"
+"|image:images/icons/ortho.png[]\n"
 "|Ein- und Ausschalten des orthogonalen Anzeigemodus\n"
 
 #. type: Title ==
@@ -1188,8 +1182,8 @@ msgstr "Footprintliste filtern"
 #: cvpcb.adoc:448
 msgid ""
 "If the selected component and/or library is highlighted when the one or more "
-"of the filtering option is enabled, the displayed footprint list in CvPcb is "
-"filtered accordingly."
+"of the filtering options is enabled, the displayed footprint list in CvPcb "
+"is filtered accordingly."
 msgstr ""
 "Wenn das ausgewählte Bauteil und/oder Bibliothek hervorgehoben wird, wenn "
 "ein oder mehr Filteroptionen eingeschaltet werden, wird die angezeigte "
@@ -1198,15 +1192,15 @@ msgstr ""
 #. type: Plain text
 #: cvpcb.adoc:454
 msgid ""
-"The icons image:images/icons/filter_component.png[] image:images/icons/"
-"filter_pincount.png[] image:images/icons/filter_library.png[] enable and "
-"disable the filtering feature. When the filtering is not enabled, the full "
-"footprint list is shown."
+"The icons image:images/icons/module_filtered_list.png[] image:images/icons/"
+"module_pin_filtered_list.png[] image:images/icons/module_library_list.png[] "
+"enable and disable the filtering feature. When the filtering is not enabled, "
+"the full footprint list is shown."
 msgstr ""
-"Die Icons image:images/icons/filter_component.png[] image:images/icons/"
-"filter_pincount.png[] image:images/icons/filter_library.png[] schalten die "
-"Filterfunktion ein und aus. Wenn die Filterung ausgeschaltet ist, wird die "
-"gesamte Footprintliste angezeigt."
+"Die Icons image:images/icons/module_filtered_list.png[] image:images/icons/"
+"module_pin_filtered_list.png[] image:images/icons/module_library_list.png[] "
+"schalten die Filterfunktion ein und aus. Wenn die Filterung ausgeschaltet "
+"ist, wird die gesamte Footprintliste angezeigt."
 
 #. type: Plain text
 #: cvpcb.adoc:456
@@ -1876,7 +1870,7 @@ msgstr ""
 #. type: Plain text
 #: cvpcb_footprint_libraries_tables.adoc:119
 msgid ""
-"the *+KIPRJMOD+* environment variable. This points always the current "
+"the *+KIPRJMOD+* environment variable. This always points to the current "
 "project directory and cannot be modified."
 msgstr ""
 "die *+KIPRJMOD+* Umgebungsvariable. Diese zeigt immer auf das aktuelle "
@@ -1946,7 +1940,7 @@ msgid ""
 "repo and saving them locally. Therefore the ``Git Hub'' plugin is for *read "
 "only accessing remote pretty footprint libraries at* https://github.com/"
 "[https://github.com]. To add a GitHub entry to the footprint library table "
-"the ``Library Path'' in the footprint library table row a must be set to a "
+"the ``Library Path'' in the footprint library table row must be set to a "
 "valid GitHub URL."
 msgstr ""
 "Für GitHub gibt es ein spezielles Plugin, welches eine Schnittstelle mit Nur-"
@@ -2266,7 +2260,7 @@ msgstr ""
 #: cvpcb_footprint_libraries_tables.adoc:269
 msgid ""
 "One usage pattern would be to define your most commonly used libraries "
-"globally and the library only require for the project in the project "
+"globally and the library only required for the project in the project "
 "specific library table. There is no restriction on how you define your "
 "libraries."
 msgstr ""
@@ -2447,10 +2441,3 @@ msgstr "Footprint Bibliothekswizard Auswahl Speicherort"
 #, no-wrap
 msgid "images/en/fplib_wizard_chooseflt.png"
 msgstr "images/de/fplib_wizard_chooseflt.png"
-
-#~ msgid ""
-#~ "Please direct any comments or suggestions about this document to the "
-#~ "KiCad mailing list: https://launchpad.net/~kicad-developers"
-#~ msgstr ""
-#~ "Bitte richten Sie alle Kommentare oder Vorschläge zu diesem Dokument an "
-#~ "die KiCad Mailing Liste: https://launchpad.net/~kicad-developers"

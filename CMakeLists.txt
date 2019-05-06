@@ -15,9 +15,9 @@ project( KiCadDocumentation NONE )
 # Desired targets are DBLATEX,FOP and ASCIIDOCTOR-PDF
 set( PDF_GENERATOR "DBLATEX" CACHE STRING "Specify which PDF generator to use: DBLATEX|FOP" )
 
-# Provide an option for a single language build. If nothing else, this will at
-# least help developers to speed up a build they're working on
-set( SINGLE_LANGUAGE "" CACHE STRING "Specify a single language to build: en|fr|it|ja|nl|pl" )
+# Provide an option to limit the set of languages built. This helps developers to speed up a
+# build they're working on, or limit the number of dependencies for packagers
+set( LANGUAGES "" CACHE LIST "Specify languages to build: ca;de;en;es;fr;id;it;ja;nl;pl;ru;zh" )
 
 # Provide an option to decide which documentation formats to build.
 set( BUILD_FORMATS "html;pdf;epub" CACHE LIST "Specify which output formats to build html/pdf/epub" )
@@ -40,29 +40,28 @@ add_a2x_option( --no-xmllint )
 add_a2x_option( -f pdf )
 #add_a2x_option( --verbose )
 
-# Add a2x options depending on which PDF generator we're using
-if( ${PDF_GENERATOR} MATCHES DBLATEX )
-    # When the a2x target macro knows we're using dblatex, it adds in the
-    # --dblatex-opts command and uses the following options for that
-    add_dblatex_option( -P latex.output.revhistory=0 )
-    add_dblatex_option( -P doc.publisher.show=0 )
-    add_dblatex_option( -s ${PROJECT_SOURCE_DIR}/CMakeSupport/pdf-cover-dblatex.sty )
+if( "${BUILD_FORMATS}" MATCHES "(p|P)(d|D)(f|F)" )
 
-    find_package( DBLATEX REQUIRED )
-endif()
+    # Add a2x options depending on which PDF generator we're using
+    if( ${PDF_GENERATOR} MATCHES DBLATEX )
+        set_dblatex_common_options()
+        find_package( DBLATEX REQUIRED )
+    endif()
 
-if( ${PDF_GENERATOR} MATCHES FOP )
-    add_a2x_option( --fop )
-    add_a2x_option( --xsl-file ${PROJECT_SOURCE_DIR}/xsl/kicad.xsl )
-    find_package( FOP REQUIRED )
-endif()
+    if( ${PDF_GENERATOR} MATCHES FOP )
+        add_a2x_option( --fop )
+        add_a2x_option( --xsl-file ${PROJECT_SOURCE_DIR}/xsl/kicad.xsl )
+        find_package( FOP REQUIRED )
+    endif()
 
-if( ${PDF_GENERATOR} MATCHES ASCIIDOCTORPDF )
-    message( FATAL_ERROR "AsciiDoctor-pdf is not currently supported!" )
+    if( ${PDF_GENERATOR} MATCHES ASCIIDOCTORPDF )
+        message( FATAL_ERROR "AsciiDoctor-pdf is not currently supported!" )
 
-    # Discover if the AsciiDoctor toolchain is available
-    # find_package( ASCIIDOCTOR )
-    # find_package( ASCIIDOCTORPDF )
+        # Discover if the AsciiDoctor toolchain is available
+        # find_package( ASCIIDOCTOR )
+        # find_package( ASCIIDOCTORPDF )
+
+    endif()
 
 endif()
 
@@ -100,42 +99,19 @@ if( GIT_FOUND )
         ERROR_VARIABLE git_branch_error
         OUTPUT_STRIP_TRAILING_WHITESPACE )
 
+    message (STATUS "On branch ${git_branch_output} with tag ${git_tags_output}" )
     # Due to how tags work in Git it's necessary for us to ensure a few things. For a start, if we
     # create a new branch, switch to it and create a tag, that tag becomes visible in the master
     # branch. Make sure if we're on the master branch that we use that in the
     if( "${git_branch_output}" STREQUAL "master" )
         # TODO: Should we include a 6-digit hash here too?
-        set( CPACK_PACKAGE_VERSION "master" )
+        set( CPACK_PACKAGE_VERSION "HEAD" )
     else()
         if( NOT "${git_tags_output}" STREQUAL "" )
-            # Make sure the tag is associated with the current branch. Otherwise we'll use the branch
-            # name instead. The tag and branch schema means we need branches in the format 1.0, 2.0,
-            # etc. and tags in the format 1.0.1, 2.0.1, etc. to match
-
-            string( SUBSTRING "${git_tags_output}" 0 3 GIT_TAG )
-
-            if( "${GIT_TAG}" STREQUAL "${git_branch_output}" )
-                # The tag matches the branch so use the tag as the package version
-                set( CPACK_PACKAGE_VERSION ${git_tags_output} )
-            else()
-                # Tag didn't match so assume it's there in error and use the more generic branch
-                # name as the package version instead
-                set( CPACK_PACKAGE_VERSION ${git_branch_output} )
-            endif()
+            set( CPACK_PACKAGE_VERSION ${git_tags_output} )
         endif()
     endif()
-endif()
-
-# Everything without leading / is relative to CMAKE_INSTALL_PREFIX.
-set( KICAD_DOC_INSTALL_PATH share/doc/kicad
-     CACHE PATH "Install path of KiCad documentation files relative to CMAKE_INSTALL_PREFIX." )
-
-# Set the language in the package name if the package only contains a single
-# language
-if( "${SINGLE_LANGUAGE}" STREQUAL "" )
-    set( PACKAGE_LANGUAGE "" )
-else()
-    set( PACKAGE_LANGUAGE "-${SINGLE_LANGUAGE}" )
+    message (STATUS "Setting package version to ${CPACK_PACKAGE_VERSION}")
 endif()
 
 # If there is more than one build format, do not bother transforming the
@@ -147,9 +123,7 @@ else()
     set( PACKAGE_BUILD_FORMAT "-${BUILD_FORMATS}" )
 endif()
 
-# Generate both .tar.gz and .zip package targets
-set( CPACK_GENERATOR "TGZ;ZIP" )
-set( CPACK_PACKAGE_FILE_NAME "kicad-doc${PACKAGE_BUILD_FORMAT}${PACKAGE_LANGUAGE}-${CPACK_PACKAGE_VERSION}" )
+# Generate both .tar.gz package target
+set( CPACK_GENERATOR "TGZ" )
+set( CPACK_PACKAGE_FILE_NAME "kicad-doc${PACKAGE_BUILD_FORMAT}-${CPACK_PACKAGE_VERSION}" )
 include( CPack )
-
-

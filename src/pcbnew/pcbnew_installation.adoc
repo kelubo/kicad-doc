@@ -37,9 +37,9 @@ There are several kinds of library supported by Pcbnew, each of
 which is supported by a "plugin":
 
 * KiCad - native KiCad footprint libraries stored on a local filesystem
-    in the _.pretty_ format (folders containing _.kicad_mod_ files)
+  in the _.pretty_ format (folders containing _.kicad_mod_ files)
 * Github - native KiCad footprint libraries in the _.pretty_ format,
-    stored online as a Github repository
+  stored online as a Github repository
 * Legacy - old-style KiCad footprint libraries (_.mod_ files)
 * Eagle - Eagle footprint libraries (folders containing _.fp_ files)
 * Geda-PCB - Geda PCB libraries
@@ -109,7 +109,7 @@ repository] that you can use as your own starting point:
     https://github.com/KiCad/kicad-library/blob/master/template/fp-lib-table.for-eagle-6.4.0[fp-lib-table.for-eagle-6.4.0]
 ====
 
-The *first thing* to when configuring KiCad do is to modify this table
+The *first thing* to do when configuring KiCad do is to modify this table
 (add/remove entries) according to your work and the libraries you need
 for your projects.
 
@@ -142,10 +142,10 @@ There are some rules for valid library table entries:
 
 * The colon `:` character cannot be used anywhere in the nickname.
 * Each library entry must have a valid path and/or file name depending on
-the type of library. Paths can be defined as absolute, relative, or by environment variable
-substitution (see below)
-*  The appropriate plug in type must be selected in order for the library
-to be properly read.
+  the type of library. Paths can be defined as absolute, relative, or by
+  environment variable substitution (see below)
+* The appropriate plug in type must be selected in order for the library
+  to be properly read.
 
 There is also a description field to add a description of the library
 entry.  The option field contains special options that are plugin-specific
@@ -218,7 +218,7 @@ image::images/en/fplib_wizard_chooseflt.png[scaledwidth="65%", alt="Footprint li
 You might have local libraries already on your computer. For example:
 
 * Previously downloaded KiCad pretty directories
-* Legacy KiCad _.mod_ files from an older installations
+* Legacy KiCad _.mod_ files from older installations
 * Geda or Eagle libraries
 
 These can be added with the "Files on my computer" option. You will

@@ -1,13 +1,13 @@
 # Cvpcb User Manual Polish Translation
-# Copyright (C) 2014 Free Software Foundation, Inc.
-# This file is distributed under the same license as the KiCad package.
-# Kerusey Karyu <keruseykaryu@o2.pl>, 2015.
+# Copyright (C) The KiCad Documentation Team
+# This file is distributed under the same license as the KiCad documentation package.
+# Kerusey Karyu <keruseykaryu@o2.pl>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
-"POT-Creation-Date: 2016-08-31 08:42+0200\n"
-"PO-Revision-Date: 2016-08-31 08:45+0200\n"
+"POT-Creation-Date: 2018-12-08 17:30+0100\n"
+"PO-Revision-Date: 2018-12-08 18:01+0100\n"
 "Last-Translator: Kerusey Karyu <keruseykaryu@o2.pl>\n"
 "Language-Team: Polish KiCAD Team: Mateusz Skowroński, Krzysztof Kawa, "
 "Kerusey Karyu\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 2.2\n"
 
 #. type: Title =
 #: cvpcb.adoc:6
@@ -37,18 +37,18 @@ msgstr "*Prawa autorskie*\n"
 #. type: Plain text
 #: cvpcb.adoc:18
 msgid ""
-"This document is Copyright (C) 2010-2015 by it's contributors as listed "
+"This document is Copyright (C) 2010-2018 by it's contributors as listed "
 "below. You may distribute it and/or modify it under the terms of either the "
-"GNU General Public License (http://www.gnu.org/licenses/gpl.html), version 3 "
-"or later, or the Creative Commons Attribution License (http://"
+"GNU General Public License (https://www.gnu.org/licenses/gpl.html), version "
+"3 or later, or the Creative Commons Attribution License (https://"
 "creativecommons.org/licenses/by/3.0/), version 3.0 or later."
 msgstr ""
-"Copyright (C) 2010-2016. Ten dokument jest chroniony prawem autorskim. Lista "
+"Copyright (C) 2010-2018. Ten dokument jest chroniony prawem autorskim. Lista "
 "autorów znajduje się poniżej. Możesz go rozpowszechniać oraz modyfikować na "
-"zasadach określonych w General Public License (http://www.gnu.org/licenses/"
-"gpl.html), wersja 3 lub późniejsza, albo określonych w Creative Commons "
-"Attribution License (http://creativecommons.org/licenses/by/3.0/), wersja "
-"3.0 lub późniejsza."
+"zasadach określonych w GNU General Public License (http://www.gnu.org/"
+"licenses/gpl.html), wersja 3 lub późniejsza, albo określonych w Creative "
+"Commons Attribution License (http://creativecommons.org/licenses/by/3.0/), "
+"wersja 3.0 lub późniejsza."
 
 #. type: Plain text
 #: cvpcb.adoc:20
@@ -301,8 +301,8 @@ msgstr "*CvPcb jest uruchamiany wyłącznie poprzez edytor schematów Eeschema*,
 
 #. type: Plain text
 #: cvpcb.adoc:112
-msgid "image:images/icons/run-cvpcb.png[run cvpcb]"
-msgstr "image:images/icons/run-cvpcb.png[Uruchom CvPcb]"
+msgid "image:images/icons/cvpcb.png[Calling CvPcb]"
+msgstr "image:images/icons/cvpcb.png[Uruchamianie CvPcb]"
 
 #. type: Plain text
 #: cvpcb.adoc:115
@@ -332,6 +332,12 @@ msgstr "Główne okno aplikacji"
 #: cvpcb.adoc:121
 msgid "The image below shows the main window of CvPcb."
 msgstr "Poniższa ilustracja pokazuje widok głównego okna programu CvPcb."
+
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:122
+#, no-wrap
+msgid "The main window of CvPcb"
+msgstr "Główne okno programu CvPcb"
 
 #. type: Target for macro image
 #: cvpcb.adoc:122
@@ -363,6 +369,12 @@ msgstr ""
 #, no-wrap
 msgid "Main Window Toolbar"
 msgstr "Główny pasek narzędzi"
+
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:134
+#, no-wrap
+msgid "Main Toolbar of CvPcb"
+msgstr "Główny pasek narzędzi CvPcb"
 
 #. type: Target for macro image
 #: cvpcb.adoc:134
@@ -432,12 +444,13 @@ msgstr ""
 #: cvpcb.adoc:161
 #, no-wrap
 msgid ""
-"|image:images/icons/auto_association.png[]\n"
+"|image:images/icons/auto_associe.png[]\n"
 "|Automatically associate footprints with components starting using an\n"
 "equivalence file.\n"
 msgstr ""
-"|image:images/icons/auto_association.png[]\n"
-"|Automatycznie przypisuje nazwy footprintów korzystając z plików przypisań automatycznych `.equ`. Użycie tego narzędzia domyślnie przyjmuje, że te pliki są dostępne.\n"
+"|image:images/icons/auto_associe.png[]\n"
+"|Automatycznie przypisuje footprinty komponentom na podstawie pliku\n"
+"automatycznego przypisywania.\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:164
@@ -464,35 +477,35 @@ msgstr ""
 #: cvpcb.adoc:172
 #, no-wrap
 msgid ""
-"|image:images/icons/filter_component.png[]\n"
+"|image:images/icons/module_filtered_list.png[]\n"
 "|Enable or disable the filtering to limit the list of footprints to the\n"
 "footprint filters of the selected component.\n"
 msgstr ""
-"|image:images/icons/filter_component.png[]\n"
+"|image:images/icons/module_filtered_list.png[]\n"
 "|Włącza lub wyłącza filtrowanie za pomocą filtrów footprintów zapisanych \n"
-"we właściwościach wybraneego komponentu.\n"
+"we właściwościach wybranego komponentu.\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:176
 #, no-wrap
 msgid ""
-"|image:images/icons/filter_pincount.png[]\n"
+"|image:images/icons/module_pin_filtered_list.png[]\n"
 "|Enable or disable the filtering to limit the list of footprints using\n"
 "the pin count of the selected component.\n"
 msgstr ""
-"|image:images/icons/filter_pincount.png[]\n"
+"|image:images/icons/module_pin_filtered_list.png[]\n"
 "|Włącza lub wyłącza filtrowanie za pomocą filtra używającego klucza \n"
-"w postaci ilości wyprowadzeń wybraneego komponentu.\n"
+"w postaci ilości wyprowadzeń wybranego komponentu.\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:180
 #, no-wrap
 msgid ""
-"|image:images/icons/filter_library.png[]\n"
+"|image:images/icons/module_library_list.png[]\n"
 "|Enable or disable filtering to limit the list of footprints using the\n"
 "selected library.\n"
 msgstr ""
-"|image:images/icons/filter_library.png[]\n"
+"|image:images/icons/module_library_list.png[]\n"
 "|Włącza lub wyłącza filtrowanie za pomocą filtra używającego klucza \n"
 "w postaci wybranej biblioteki.\n"
 
@@ -574,6 +587,12 @@ msgstr "|End |Wybiera ostatni element z bieżąco wybranej listy.\n"
 #, no-wrap
 msgid "CvPcb Configuration"
 msgstr "Konfigurowanie CvPcb"
+
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:211
+#, no-wrap
+msgid "Preferences menu"
+msgstr "Menu Ustawienia"
 
 #. type: Target for macro image
 #: cvpcb.adoc:211
@@ -685,6 +704,12 @@ msgstr ""
 "nazwy przy pozostawionym oknie podglądu footprintów. Można również podglądać "
 "widok 3D (jeśli moduły maja przypisane kształty 3D)."
 
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:254
+#, no-wrap
+msgid "Viewing a footprint"
+msgstr "Podgląd footprintu"
+
 #. type: Target for macro image
 #: cvpcb.adoc:254
 #, no-wrap
@@ -783,6 +808,12 @@ msgstr "Menu kontekstowe"
 msgid "Displayed by right-clicking the mouse:"
 msgstr "Wyświetlane jest poprzez kliknięcie prawym klawiszem myszy:"
 
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:299
+#, no-wrap
+msgid "Context menu on selected footprint"
+msgstr "Menu kontekstowe dla wybranego footprintu"
+
 #. type: Target for macro image
 #: cvpcb.adoc:299
 #, no-wrap
@@ -853,10 +884,10 @@ msgstr ""
 #: cvpcb.adoc:327
 #, no-wrap
 msgid ""
-"|image:images/icons/open_3d_model_view.png[]\n"
+"|image:images/icons/shape_3d.png[]\n"
 "|Open 3D model viewer\n"
 msgstr ""
-"|image:images/icons/open_3d_model_view.png[]\n"
+"|image:images/icons/shape_3d.png[]\n"
 "|Otwiera przeglądarkę modeli 3D\n"
 
 #. type: Title ====
@@ -869,20 +900,20 @@ msgstr "Lewy pasek narzędziowy"
 #: cvpcb.adoc:335
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_grid.png[]\n"
+"|image:images/icons/grid.png[]\n"
 "|Show or hide the grid\n"
 msgstr ""
-"|image:images/icons/toggle_grid.png[]\n"
+"|image:images/icons/grid.png[]\n"
 "|Pokazuje lub ukrywa siatkę\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:338
 #, no-wrap
 msgid ""
-"|image:images/icons/coordination_system.png[]\n"
+"|image:images/icons/polar_coord.png[]\n"
 "|Show coordinates in polar or rectangular notation\n"
 msgstr ""
-"|image:images/icons/coordination_system.png[]\n"
+"|image:images/icons/polar_coord.png[]\n"
 "|Pokazuje koordynaty jako polarne lub kartezjańskie\n"
 
 #. type: delimited block |
@@ -909,46 +940,52 @@ msgstr ""
 #: cvpcb.adoc:347
 #, no-wrap
 msgid ""
-"|image:images/icons/pointer_style.png[]\n"
+"|image:images/icons/cursor_shape.png[]\n"
 "|Toggle pointer style\n"
 msgstr ""
-"|image:images/icons/pointer_style.png[]\n"
+"|image:images/icons/cursor_shape.png[]\n"
 "|Przełącza styl kursora\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:350
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_pads_sketch.png[]\n"
+"|image:images/icons/pad_sketch.png[]\n"
 "|Toggle between drawing pads in sketch or normal mode\n"
 msgstr ""
-"|image:images/icons/toggle_pads_sketch.png[]\n"
+"|image:images/icons/pad_sketch.png[]\n"
 "|Przełącza pomiędzy wyświetlaniem pól lutowniczych w trybie pełnym lub tylko zarys\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:353
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_text_sketch.png[]\n"
+"|image:images/icons/text_sketch.png[]\n"
 "|Toggle between drawing text in sketch or normal mode\n"
 msgstr ""
-"|image:images/icons/toggle_text_sketch.png[]\n"
+"|image:images/icons/text_sketch.png[]\n"
 "|Przełącza pomiędzy wyświetlaniem tekstu w trybie pełnym lub tylko zarys\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:356
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_edge_sketch.png[]\n"
+"|image:images/icons/show_mod_edge.png[]\n"
 "|Toggle between drawing edges in sketch or normal mode\n"
 msgstr ""
-"|image:images/icons/toggle_edge_sketch.png[]\n"
+"|image:images/icons/show_mod_edge.png[]\n"
 "|Przełącza pomiędzy wyświetlaniem krawędzi w trybie pełnym lub tylko zarys\n"
 
 #. type: Title ===
 #: cvpcb.adoc:358
 #, no-wrap
 msgid "Viewing the Current 3D Model"
+msgstr "Podgląd bieżącego modelu 3D"
+
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:360
+#, no-wrap
+msgid "3D-Model view"
 msgstr "Podgląd 3D"
 
 #. type: Target for macro image
@@ -983,10 +1020,10 @@ msgstr ""
 #: cvpcb.adoc:380
 #, no-wrap
 msgid ""
-"|image:images/icons/copy_to_clipboard.png[]\n"
+"|image:images/icons/copy.png[]\n"
 "|Copy 3D image to clipboard\n"
 msgstr ""
-"|image:images/icons/copy_to_clipboard.png[]\n"
+"|image:images/icons/copy.png[]\n"
 "|Kopiuje obraz 3D do schowka\n"
 
 #. type: delimited block |
@@ -1013,60 +1050,60 @@ msgstr ""
 #: cvpcb.adoc:398
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_back_x.png[]\n"
+"|image:images/icons/rotate_neg_x.png[]\n"
 "|Rotate backward along the X axis\n"
 msgstr ""
-"|image:images/icons/rotate_back_x.png[]\n"
+"|image:images/icons/rotate_neg_x.png[]\n"
 "|Obraca w lewo wokół osi X\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:401
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_forw_x.png[]\n"
+"|image:images/icons/rotate_pos_x.png[]\n"
 "|Rotate forward along the X axis\n"
 msgstr ""
-"|image:images/icons/rotate_forw_x.png[]\n"
+"|image:images/icons/rotate_pos_x.png[]\n"
 "|Obraca w prawo wokół osi X\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:404
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_back_y.png[]\n"
+"|image:images/icons/rotate_neg_y.png[]\n"
 "|Rotate backward along the Y axis\n"
 msgstr ""
-"|image:images/icons/rotate_back_y.png[]\n"
+"|image:images/icons/rotate_neg_y.png[]\n"
 "|Obraca w lewo wokół osi Y\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:407
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_forw_y.png[]\n"
+"|image:images/icons/rotate_pos_y.png[]\n"
 "|Rotate forward along the Y axis\n"
 msgstr ""
-"|image:images/icons/rotate_forw_y.png[]\n"
+"|image:images/icons/rotate_pos_y.png[]\n"
 "|Obraca w prawo wokół osi Y\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:410
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_back_z.png[]\n"
+"|image:images/icons/rotate_neg_z.png[]\n"
 "|Rotate backward along the Z axis\n"
 msgstr ""
-"|image:images/icons/rotate_back_z.png[]\n"
+"|image:images/icons/rotate_neg_z.png[]\n"
 "|Obraca w lewo wokół osi Z\n"
 
 #. type: delimited block |
 #: cvpcb.adoc:413
 #, no-wrap
 msgid ""
-"|image:images/icons/rotate_forw_z.png[]\n"
+"|image:images/icons/rotate_pos_z.png[]\n"
 "|Rotate forward along the Z axis\n"
 msgstr ""
-"|image:images/icons/rotate_forw_z.png[]\n"
+"|image:images/icons/rotate_pos_z.png[]\n"
 "|Obraca w prawo wokół osi Z\n"
 
 #. type: delimited block |
@@ -1113,10 +1150,10 @@ msgstr ""
 #: cvpcb.adoc:428
 #, no-wrap
 msgid ""
-"|image:images/icons/toggle_ortho.png[]\n"
+"|image:images/icons/ortho.png[]\n"
 "|Toggle orthographic projection mode on and off\n"
 msgstr ""
-"|image:images/icons/toggle_ortho.png[]\n"
+"|image:images/icons/ortho.png[]\n"
 "|Włącza lub wyłącza tryb projekcji ortagonalnej.\n"
 
 #. type: Title ==
@@ -1156,30 +1193,36 @@ msgstr "Filtrowanie listy footprintów"
 #: cvpcb.adoc:448
 msgid ""
 "If the selected component and/or library is highlighted when the one or more "
-"of the filtering option is enabled, the displayed footprint list in CvPcb is "
-"filtered accordingly."
+"of the filtering options is enabled, the displayed footprint list in CvPcb "
+"is filtered accordingly."
 msgstr ""
-"Jeśli wybrany komponent lub biblioteka jest podświetlona gdy jedna lub "
-"więcej opcji filtrowania jest włączona, lista footprintów w programie CvPcb "
-"jest odpowiednio filtrowana."
+"Jeśli wybrany komponent lub biblioteka jest podświetlona podczas gdy "
+"włączona jest jedna lub więcej opcji filtrowania, lista footprintów w "
+"programie CvPcb jest odpowiednio filtrowana."
 
 #. type: Plain text
 #: cvpcb.adoc:454
 msgid ""
-"The icons image:images/icons/filter_component.png[] image:images/icons/"
-"filter_pincount.png[] image:images/icons/filter_library.png[] enable and "
-"disable the filtering feature. When the filtering is not enabled, the full "
-"footprint list is shown."
+"The icons image:images/icons/module_filtered_list.png[] image:images/icons/"
+"module_pin_filtered_list.png[] image:images/icons/module_library_list.png[] "
+"enable and disable the filtering feature. When the filtering is not enabled, "
+"the full footprint list is shown."
 msgstr ""
-"Ikony image:images/icons/filter_component.png[] image:images/icons/"
-"filter_pincount.png[] image:images/icons/filter_library.png[] włączają lub "
-"wyłączaja poszczególne filtry. Gdy filtracja nie jest włączona, wyświetlana "
-"jest pełna lista footprintów."
+"Ikony image:images/icons/module_filtered_list.png[] image:images/icons/"
+"module_pin_filtered_list.png[] image:images/icons/module_library_list.png[] "
+"włączają lub wyłączają poszczególne filtry. Gdy filtracja nie jest włączona, "
+"wyświetlana jest pełna lista footprintów."
 
 #. type: Plain text
 #: cvpcb.adoc:456
 msgid "Without filtering:"
 msgstr "Bez filtrowania:"
+
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:457
+#, no-wrap
+msgid "List without any filter"
+msgstr "Lista bez filtrowania"
 
 #. type: Target for macro image
 #: cvpcb.adoc:457
@@ -1205,6 +1248,12 @@ msgstr ""
 "Odfiltrowane poprzez listę dozwolonych footprintów jaką posiada wybrany "
 "komponent:"
 
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:465
+#, no-wrap
+msgid "List filtered by component"
+msgstr "Lista przefiltrowana wg komponentów"
+
 #. type: Target for macro image
 #: cvpcb.adoc:465
 #, no-wrap
@@ -1222,6 +1271,12 @@ msgstr ""
 "została ustawiona za pomocą wpisów w zakładce filtrowania footprintów w "
 "oknie dialogowym właściwości komponentów, jak pokazano niżej."
 
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:471
+#, no-wrap
+msgid "Footprint filter in Eeschema"
+msgstr "Filtr footprintów w programi Eeschema"
+
 #. type: Target for macro image
 #: cvpcb.adoc:471
 #, no-wrap
@@ -1234,6 +1289,12 @@ msgid "Filtered by the pin count of the selected component:"
 msgstr ""
 "Odfiltrowane poprzez liczbę wyprowadzeń jaką posiada wybrany komponent:"
 
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:475
+#, no-wrap
+msgid "List filtered by pin count"
+msgstr "Lista przefiltrowana wg liczby pinów"
+
 #. type: Target for macro image
 #: cvpcb.adoc:475
 #, no-wrap
@@ -1244,6 +1305,12 @@ msgstr "images/pl/filter_pincount.png"
 #: cvpcb.adoc:478
 msgid "Filtered by the selected library."
 msgstr "Odfiltrowane poprzez aktualnie wybraną bibliotekę."
+
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:479
+#, no-wrap
+msgid "List filtered by library"
+msgstr "Lista przefiltrowana wg wybranej biblioteki"
 
 #. type: Target for macro image
 #: cvpcb.adoc:479
@@ -1265,6 +1332,12 @@ msgstr ""
 #: cvpcb.adoc:485
 msgid "Filtered by the selected component pin count and the component filter:"
 msgstr "Odfiltrowane poprzez liczbę wyprowadzeń oraz dozwolony komponent:"
+
+#. type: Named 'alt' AttributeList argument for macro 'image'
+#: cvpcb.adoc:486
+#, no-wrap
+msgid "List filtered by pin count and component"
+msgstr "Lista przefiltrowana wg liczby wyprowadzeń i komponentów"
 
 #. type: Target for macro image
 #: cvpcb.adoc:486
@@ -1800,10 +1873,10 @@ msgstr "Domyślnie KiCad podczas pracy definiuje **dwie zmienne systemowe**:"
 #. type: Plain text
 #: cvpcb_footprint_libraries_tables.adoc:119
 msgid ""
-"the *+KIPRJMOD+* environment variable. This points always the current "
+"the *+KIPRJMOD+* environment variable. This always points to the current "
 "project directory and cannot be modified."
 msgstr ""
-"zmienna *+KIPRJMOD+*. Wskazuje zawsze na katalog główny obecnego projektu i "
+"zmienna *+KIPRJMOD+*. Wskazuje zawsze na katalog główny bieżącego projektu i "
 "nie może być modyfikowana."
 
 #. type: Plain text
@@ -1873,19 +1946,18 @@ msgid ""
 "repo and saving them locally. Therefore the ``Git Hub'' plugin is for *read "
 "only accessing remote pretty footprint libraries at* https://github.com/"
 "[https://github.com]. To add a GitHub entry to the footprint library table "
-"the ``Library Path'' in the footprint library table row a must be set to a "
+"the ``Library Path'' in the footprint library table row must be set to a "
 "valid GitHub URL."
 msgstr ""
 "GitHub to specjalna wtyczka pozwalająca na łączenie się ze zdalnym "
 "repozytorium GitHub zawierającym footprinty w formacie Pretty (Pretty to "
 "nazwa nowego formatu zapisu footprintów w programie KiCad). Repozytorium to "
-"jest tylko do odczytu, ale wtyczka umożliwia również dostęp do technologii "
-"``Copy On Write'' (COW) wspierającej możliwość edycji footpritnów "
-"odczytanych z repozytorium GitHub https://github.com/KiCad[https://github."
-"com/KiCad] i zapisanie ich nowych wersji na dysku lokalnym, które później "
-"można wysłać do opiekunów repozytorium w celu ich aktualizacji. By dodać "
-"wpis GitHub do tabeli bibliotek, pole ``Ścieżka'' musi zostać wypełniona "
-"ważnym adresem URL do repozytorium GitHub."
+"jest tylko do odczytu, ale wtyczka umożliwia dostęp do technologii ``Copy On "
+"Write'' (COW) wspierającej możliwość edycji footpritnów odczytanych z "
+"repozytoriów GitHub https://github.com/[https://github.com] i zapisanie ich "
+"modyfikacji na dysku lokalnym tak by zmodyfikowane wersje stały się aktywne. "
+"By dodać wpis GitHub do tabeli bibliotek, pole ``Ścieżka'' musi zostać "
+"wypełniona ważnym adresem URL do repozytorium GitHub."
 
 #. type: Plain text
 #: cvpcb_footprint_libraries_tables.adoc:149
@@ -2188,15 +2260,16 @@ msgstr ""
 #: cvpcb_footprint_libraries_tables.adoc:269
 msgid ""
 "One usage pattern would be to define your most commonly used libraries "
-"globally and the library only require for the project in the project "
+"globally and the library only required for the project in the project "
 "specific library table. There is no restriction on how you define your "
 "libraries."
 msgstr ""
 "Sensowne staje się wtedy wpisanie bibliotek, które są wykorzystywane prawie "
 "we wszystkich projektach do tabeli globalnej, a w lokalnych tabelach "
-"umieszczać tylko te, które są przydatne tylko w tym konkretnym projekcie. "
+"umieścić tylko te, które są przydatne tylko w tym konkretnym projekcie. "
 "Będzie to rozwiązanie, które będzie posiadało największą elastyczność "
-"kosztem zmniejszenia szybkości wyszukiwania."
+"kosztem zmniejszenia szybkości wyszukiwania. Oczywiście nie ma żadnych "
+"przeszkód by zdefiniować swoje tabele bibliotek w jakikolwiek inny sposób."
 
 #. type: Title ===
 #: cvpcb_footprint_libraries_tables.adoc:272
@@ -2245,8 +2318,8 @@ msgstr "Tutaj zostały wybrane biblioteki lokalne."
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: cvpcb_footprint_libraries_tables.adoc:286
 #, no-wrap
-msgid "fplib wizard locallibstartpage"
-msgstr "fplib wizard locallibstartpage"
+msgid "Footprint library wizard local libstartpage"
+msgstr "Kreator tabeli footprintów. Biblioteki lokalne"
 
 #. type: Target for macro image
 #: cvpcb_footprint_libraries_tables.adoc:286
@@ -2262,8 +2335,8 @@ msgstr "Tutaj zostały wybrane biblioteki zdalne."
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: cvpcb_footprint_libraries_tables.adoc:290
 #, no-wrap
-msgid "fplib wizard startpage_github"
-msgstr "fplib wizard startpage_github"
+msgid "Footprint library wizard startpage GitHub"
+msgstr "Kreator tabeli footprintów. Biblioteki zdalne z GitHub"
 
 #. type: Target for macro image
 #: cvpcb_footprint_libraries_tables.adoc:290
@@ -2288,8 +2361,8 @@ msgstr "Tutaj zostały wybrane biblioteki lokalne."
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: cvpcb_footprint_libraries_tables.adoc:297
 #, no-wrap
-msgid "fplib wizard local lib selection"
-msgstr "fplib wizard local lib selection"
+msgid "Footprint library wizard local lib selection"
+msgstr "Kreator tabeli footprintów. Wybór bibliotek lokalnych"
 
 #. type: Target for macro image
 #: cvpcb_footprint_libraries_tables.adoc:297
@@ -2305,8 +2378,8 @@ msgstr "Tutaj zostały wybrane biblioteki zdalne."
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: cvpcb_footprint_libraries_tables.adoc:301
 #, no-wrap
-msgid "fplib wizard github selection"
-msgstr "fplib wizard github selection"
+msgid "Footprint library wizard GitHub selection"
+msgstr "Kreator tabeli footprintów. Wybór bibliotek zdalnych"
 
 #. type: Target for macro image
 #: cvpcb_footprint_libraries_tables.adoc:301
@@ -2323,8 +2396,8 @@ msgstr "Po wybraniu zestawu bibliotek, następna strona dokona ich walidacji:"
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: cvpcb_footprint_libraries_tables.adoc:305
 #, no-wrap
-msgid "fplib wizard validate"
-msgstr "fplib wizard validate"
+msgid "Footprint libary wizard validate"
+msgstr "Kreator tabeli footprintów. Walidacja"
 
 #. type: Target for macro image
 #: cvpcb_footprint_libraries_tables.adoc:305
@@ -2361,8 +2434,8 @@ msgstr "Tabela lokalna (zależna od projektu)"
 #. type: Named 'alt' AttributeList argument for macro 'image'
 #: cvpcb_footprint_libraries_tables.adoc:315
 #, no-wrap
-msgid "fplib wizard chooseflt"
-msgstr "fplib wizard chooseflt"
+msgid "Footprint library wizard choose local folder"
+msgstr "Kreator tabeli footprintów. Wybór folderu lokalnego"
 
 #. type: Target for macro image
 #: cvpcb_footprint_libraries_tables.adoc:315

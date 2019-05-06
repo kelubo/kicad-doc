@@ -172,9 +172,9 @@ image::images/Pcbnew_dr_example_rustic.png[scaledwidth="80%"]
 
 ==== Standard
 
-* Clearance: 0.35mm (0.0138 inches).
+* Clearance: 0.35 mm (0.0138 inches).
 
-* Track width: 0.5mm (0.0127 inches).
+* Track width: 0.5 mm (0.0127 inches).
 
 * Pad diameter for ICs: make them elongated in order to allow tracks to
   pass between IC pads and yet have the pads offer a sufficient adhesive
@@ -234,11 +234,11 @@ image:images/Pcbnew_routing_posture.png[]
 
 Holding 'Ctrl' while routing in the non-legacy canvases constrains the
 routing to a single horizontal or vertical segment. Switching posture
-changes to a single diagonal segment.
+changes to a single diagonal segment. Holding 'Shift' while routing
+removes the 'snap to object' gravity.
 
 When creating a new track, Pcbnew shows links to nearest
-unconnected pads, link number set in option "Max. Links" in General
-Options.
+unconnected pads.
 
 End the track by double-clicking, by the pop-up menu or by the hotkey
 'End'.
@@ -260,6 +260,11 @@ A via can be inserted only when a track is in progress:
 * By the hotkey 'V'.
 
 * By switching to a new copper layer using the appropriate hotkey.
+
+Holding 'Shift' while adding a via ends routing as soon as the via 
+is placed. This is useful when adding a connection to a plane, so
+the active layer doesn't change and no extra key need be pressed
+to exit routing.
 
 === Select/edit the track width and via size
 
@@ -313,7 +318,7 @@ One can select a new size for routing, or change to a previously created
 via or track segment:
 
 image::images/Pcbnew_track_context_menu.png[scaledwidth="70%"]
-
+//TODO: add a link to Global changes section
 If you want to change many via (or track) sizes, the best way is to
 use a specific Netclass for the net(s) that must be edited (see
 global changes).
